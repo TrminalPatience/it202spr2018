@@ -9,47 +9,96 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
   
-<div class="container">
-<div class="jumbotron">
-  <h1 class="display-4">Ben Bizzle-Homework 5</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-</div>
-           
+<div class="container-fluid">
+	<div class="jumbotron">
+  		<h1 class="display-4">Ben Bizzle-Homework 5</h1>
+  		<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  		<hr class="my-4">
+  		<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  		<p class="lead">
+    	<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  		</p>
+	</div>
 </div>
 
-<div class="card" style="width:500px">
+<div class="row">
+    <div class="col-sm-4">
+      <div class="card">
   <img class="card-img-top" src="img_avatar1.png" alt="Card image">
-  <div class="card-img-overlay">
+  <div class="card-body">
     <h4 class="card-title">Ben Bizzle</h4>
     <p class="card-text">International Man of Mystery</p>
     <a href="#" class="btn btn-primary">See Profile</a>
   </div>
 </div>
-<ol>
-	<li>How do we include Bootstrap in our pages/sites/apps?<br>
-		Answer: We include Bootstrap by making the appropriate calls to the Bootstrap CSS and JS libraries as you can see in the head of this page.</li><br> 
-    <li>What's a CDN?<br>
-    	Answer: A content delivery network or content distribution network (CDN) is a geographically distributed network of proxy servers and their data centers.</li><br> 
-    <li>What's one advantage of using a CDN instead of hosting your own copy of the files?<br>
-    	Answer: Increases the speed of access and the relative performance by distributing the sourcing of files to several different locations which end users will connect to 			based on their geographic proximity to the closest server hosting the content.</li><br> 
-    <li>In RWD, what is a breakpoint?<br>
-    	Answer: Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.</li><br> 
-    <li>What breakpoint values does Bootstrap use?<br>
-    	Answer: Small 576 px and up, Medium 768 px and up, Large 992 px and up, and Extra Large 1200 px and up.</li><br> 
-    <li>In Bootstrap, what is the difference between fixed width container and a full width container?<br>
-    	Answer: A fixed-width container changes its max-width at each breakpoint. While a fluid-width container stays 100% wide all the time.</li><br> 
-    <li>Bootstrap (and many RWD implementations) break the page up into how many columns?<br>
-    	Answer:The default Bootstrap grid system utilizes 12 columns</li><br> 
-    <li>In Bootstrap, what's the purpose of a row?<br>
-    	Answer:To be a space for columns inside containers. It allows for tidier designs.</li><br> 
-<ol>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Ben Bizzle</h4>
+    <p class="card-text">Professional Male Model</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+  <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">Ben Bizzle</h4>
+    <p class="card-text">Gentleman 	&amp; Scholar</p>
+    <a href="#" class="btn btn-primary">See Profile</a>
+  </div>
+</div>
+    </div>
+  </div>
+   
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Question #</th>
+      <th>Answer</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>We include Bootstrap by making the appropriate calls to the Bootstrap CSS and JS libraries as you can see in the head of this page.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>A content delivery network or content distribution network (CDN) is a geographically distributed network of proxy servers and their data centers.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Increases the speed of access and the relative performance by distributing the sourcing of files to several different locations which end users will connect to 					  based on their geographic proximity to the closest server hosting the content.</td>
+    </tr>
+<tr>
+      <th scope="row">4</th>
+      <td>Breakpoints are the point a which your sites content will respond to provide the user with the best possible layout to consume the information.</td>
+      </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Small 576 px and up, Medium 768 px and up, Large 992 px and up, and Extra Large 1200 px and up.</td>
+      </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>A fixed-width container changes its max-width at each breakpoint. While a fluid-width container stays 100% wide all the time.</td>
+      </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>The default Bootstrap grid system utilizes 12 columns</td>
+      </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>To be a space for columns inside containers. It allows for tidier designs.</td>
+      </tr>
+      </tbody>
+</table>
+</body> 
 
-</body>
 </html>
