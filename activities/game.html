@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+    <script>
+      var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle = "blue";
+
+var circleX = c.width;
+function draw() {
+  ctx.clearRect(0,0,c.width,c.height);
+  circleX--;
+  ctx.beginPath();
+  ctx.arc(circleX,75,50,0,2*Math.PI);
+  ctx.fill();
+
+  requestAnimationFrame(draw);
+}
+
+draw();
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

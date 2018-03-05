@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+    
+    .school {border:2px solid blue;}
+    
+    #template {display:none;}
+
+        
+        
+    </style>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.get("https://data.cityofchicago.org/resource/5tiy-yfrg.json?$limit=10", 
+        
+        function(data, status){
+            //console.log("Data: " + data + "\nStatus: " + status);
+            $.each(data, function(i,v){ 
+            
+            	console.log(i,v.name_of_school);
+                
+                //$("body").append("<p>"+  v.name_of_school + "</p>");
+            
+            // var p=$("<p>");
+            
+            // p.text(v.name_of_school);
+            
+            // $("body").append(p);
+            
+            var clone = $("#template").clone();
+            
+            clone.attr("id",v.school_id);
+            
+            clone.find("h2").text(v.name_of_school);
+            clone.find("p").text(v.street_address);
+            clone.find("a").text(v.link_);
+            clone.find("a").attr("href",v.link_);
+            $("body").append(clone);
+            })
+            
+        });
+    });
+});
+</script>
+</head>
+<body>
+<div class= "school" id= "template">
+        <h2></h2>
+        <p></p>
+        <a></a>
+</div>
+<button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+</html>
